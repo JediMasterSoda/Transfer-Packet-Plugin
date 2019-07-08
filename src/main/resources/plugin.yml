@@ -1,0 +1,6 @@
+main: me.jedimastersoda.transfer.TransferPacket
+name: ${project.name}
+author: JediMasterSoda
+version: ${project.version}
+api-version: 1.14
+website: "https://github.com/JediMasterSoda/Transfer-Packet"
