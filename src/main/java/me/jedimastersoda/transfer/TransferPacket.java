@@ -8,16 +8,19 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import lombok.Getter;
+import me.jedimastersoda.transfer.utils.ReflectionUtils;
 
 public class TransferPacket extends JavaPlugin {
 
   @Getter
   private static TransferPacket instance;
 
+  private final String channel = "transfer:main";
+
   public void onEnable() {
     instance = this;
 
-    this.getServer().getMessenger().registerOutgoingPluginChannel(this, "Transfer");
+    this.getServer().getMessenger().registerOutgoingPluginChannel(this, channel);
   }
 
   /**
@@ -31,7 +34,13 @@ public class TransferPacket extends JavaPlugin {
     ByteArrayDataOutput out = ByteStreams.newDataOutput();
     out.writeUTF(ip_address);
 
-    player.sendPluginMessage(this, "Transfer", out.toByteArray());
+    try {
+      ReflectionUtils.addChannel(player, channel);
+
+      player.sendPluginMessage(this, channel, out.toByteArray());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   /**
