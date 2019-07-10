@@ -1,6 +1,6 @@
 # Transfer-Packet-Plugin
 
-#### Warning: This plugin requires players to have the [Transfer Packet Mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases/latest) installed in order to properly function.
+#### Warning: This plugin requires players to have the [Transfer Packet Mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases) installed in order to properly function.
 
 ### Usage
 1. Install the [Forge mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases) (currently supports 1.8.9 & 1.14)
