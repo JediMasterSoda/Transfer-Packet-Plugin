@@ -3,7 +3,7 @@
 #### Warning: This plugin requires players to have the [Transfer Packet Mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases) installed in order to properly function.
 
 ### Usage
-1. Install the [Forge mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases) (currently supports 1.8.9 & 1.14)
+1. Install the [Forge mod](https://github.com/JediMasterSoda/Transfer-Packet-Mod/releases) (currently supports 1.8.9 & 1.14.x)
 2. Install [the plugin](https://github.com/JediMasterSoda/Transfer-Packet-Plugin/releases/latest) on your Spigot server
 3. Use `TransferPacket.getInstance()` to access the API & route players to other servers.
 
